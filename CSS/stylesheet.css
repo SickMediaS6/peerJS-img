@@ -1,0 +1,132 @@
+html {
+    font-family: 'Oxygen', sans-serif;
+}
+body{
+    height: 10em;
+    position: relative
+}
+
+h1{
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+a{
+    font-family: 'Oxygen', sans-serif;
+}
+p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.p_welcome{
+    font-size: 16px;
+    font-weight: bold;
+}
+.Safe2Share{
+    font-weight: bolder;
+    background: -webkit-linear-gradient(left, #3BB3E5, #80BB00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+form{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.directly{
+    text-transform: uppercase;
+}
+.head1text{
+    font-weight: bolder;
+    background: -webkit-linear-gradient(left, #3BB3E5, #80BB00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 30%) 20%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+img{
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 3 / 1 / 4 / 2; }
+.div2_5 { grid-area: 2 / 1 / 3 / 2;}
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    margin: 2.4rem auto;
+    text-align: center;
+    width: 100%;
+}
+/* -- Animated hr https://codepen.io/jlantunez/pen/dqLNyb -- */
+.progress {
+    background: rgba(1, 15, 30, 0.1);
+    height: 1px;
+    overflow: hidden;
+    position: relative;
+}
+.progress::before {
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-name: progress;
+    background: #00ff41;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    width: 80px;
+}
+@keyframes progress {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(1440px);
+    }
+}
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.custom-file-input::before {
+    content: 'Upload';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+.custom-file-input:hover::before {
+    border-color: #010101;
+}
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.imageborder{
+    padding: 30px;
+    border: #010101;
+}
